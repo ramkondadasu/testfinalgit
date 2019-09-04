@@ -1,0 +1,11 @@
+http:
+   host: "localhost"
+   port: "8282"
+
+database:
+  auditDb:
+    host: "abcdefgh123456.ijklmnop7890.us-west-2.rds.amazonaws.com"
+    port: "3306"
+    username: "${dbuserrama}"
+    password: "abc123"
+    dbName: "audit_schema"
