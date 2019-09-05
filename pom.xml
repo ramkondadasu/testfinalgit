@@ -43,6 +43,8 @@
 						<workerType>Micro</workerType>
 						<workers>1</workers>
 						<environment>dev</environment>
+						<dbuserrama>sitemanage</dbuserrama>
+						<env>dev</env>
 					</cloudHubDeployment>
 				</configuration>
 				<executions>
