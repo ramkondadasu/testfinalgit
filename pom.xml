@@ -43,17 +43,21 @@
           <workers>1</workers> 
           <uri>https://anypoint.mulesoft.com</uri>; 
           <applicationName>app-cicd</applicationName> 
+          <properties>
+                <env>dev</env>
+                <dbuserrama>sitemanager</dbuserrama>
+            </properties>
         </cloudHubDeployment> 
       </configuration> 
-      <executions> 
-        <execution> 
-          <id>deploy</id> 
-          <phase>deploy</phase> 
-          <goals> 
-            <goal>deploy</goal> 
-          </goals> 
-        </execution> 
-      </executions> 
+<!--       <executions>  -->
+<!--         <execution>  -->
+<!--           <id>deploy</id>  -->
+<!--           <phase>deploy</phase>  -->
+<!--           <goals>  -->
+<!--             <goal>deploy</goal>  -->
+<!--           </goals>  -->
+<!--         </execution>  -->
+<!--       </executions>  -->
 				</plugin>
 		</plugins>
 	</build>
