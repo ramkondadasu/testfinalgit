@@ -42,7 +42,7 @@
 						<applicationName>mule-txdot-cars</applicationName>
 						<workerType>Micro</workerType>
 						<workers>1</workers>
-						<environment>dev</environment>
+						<environment>test</environment>
 <!-- 						<dbuserrama>sitemanage</dbuserrama> -->
 <!-- 						<env>dev</env> -->
 					</cloudHubDeployment>
