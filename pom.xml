@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mycompany</groupId>
+	<groupId>com.rpd</groupId>
 	<artifactId>mule-txdot-cars</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
@@ -27,6 +27,33 @@
 				<extensions>true</extensions>
 				<configuration>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>${app.runtime}</muleVersion>
+						<username>rkondadasu</username>
+						<password>Bagavan@1</password>
+						<applicationName>mule-txdot-cars</applicationName>
+						<workerType>Micro</workerType>
+						<workers>1</workers>
+						<environment>dev</environment>
+					</cloudHubDeployment>
+				</configuration>
+				<executions>
+				  <execution>
+				    <id>deploy</id>
+				    <phase>deploy</phase>
+				    <goals>
+				      <goal>deploy</goal>
+				    </goals>
+				  </execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
